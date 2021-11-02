@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+/* headings */
+
+h1, h2 {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+    text-decoration: solid underline black 1px;
+}
+
+/* logo and nav bar */
+
+#logo {
+    font-size: 300%;
+    float: left;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+#navigation {
+    font-size: 120%;
+}
+
+#navigation, #logo {
+    line-height: 100px;
+}
+
+#navigation li {
+    float: right;
+    margin-right: 50px;
+    list-style-type: none;
+}
+
+#navigation a {
+    color: black;
+    text-decoration: none;
+}
+
+.current {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+/* welcome area */
+
+#welcome-box {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+
+#welcome-text {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    padding: 20px 0 0 20px;
+    width: 300px;
+    height: 120px;
+    background-color: rgba(221, 154, 30, .8);
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    text-align: left;
+}
+
+#back-image {
+    height: 650px;
+    width: 100%;
+    background: url('../images/hero-image-one.jpg') no-repeat center center;
+    animation-name: image-zoom;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* reasons section */
+
+#reasons {
+    height: 200px;
+}
+
+#why {
+    text-align: center;
+    font-size: 250%;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+#left-reason {
+    width: 33%;
+    float: left;
+}
+
+#right-reason {
+    width: 33%;
+    float: right;
+}
+
+#center-reason {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.reason {
+    text-align: center;
+    padding: 15px;
+}
+
+#center-reason > a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+}
+
+#center-reason > a:hover {
+    text-decoration: underline;
+}
+
+#center-reason > a:visited {
+    color: black;
+}
+
+/* about section */
+
+#about {
+    height: 500px;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 250%;
+    text-decoration: none;
+}
+
+#about-text {
+    text-align: center;
+    padding: 30px;
+}
+
+#john-image {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#circle-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#circle-image {
+    background: url('../images/pexels-italo-melo-2379005.jpg') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* map section */
+
+#link-to-plans {
+    text-align: center;
+    padding: 30px;
+}
+
+#link-to-plans h2 {
+    padding-bottom: 30px;
+}
+
+#plans-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: rgba(221, 154, 30, .8);
+    color: black;
+}
+
+#plans-link:hover {
+    background-color: black;
+    color: rgba(221, 154, 30, .8);
+}
+
+#map {
+    text-align: center;
+    padding: 30px;
+}
+
+iframe {
+    width: 70%;
+}
+
+/* reviews section */
+
+#reviews {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#reviews h2 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 250%;
+}
+
+#reviews div {
+    background-color: rgba(221, 154, 30, .8);
+    width: 25%;
+    height: 220px;
+    float: left;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+footer {
+    height: 100px;
+}
+
+footer h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.social-networks {
+    text-align: center;
+    background-color: black;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 250%;
+    margin: 1%;
+    padding: 5%;
+    color: rgba(221, 154, 30, .8);
+
+}
+
+/* plans page */
+
+#plan-image {
+    clear: left;
+    background-image: url('../images/sign-up-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.plan {
+    clear: left;
+    padding: 15px;
+    background-color: rgba(221, 154, 30, .8);
+    width: 20%;
+    top: 50px;
+    left: 25px;
+}
+
+.plan ul {
+    padding: 30px;
+}
+
+#sign-up {
+    text-decoration: none;
+    padding-bottom: 15px;
+}
+
+#sign-up-button {
+    clear: left;
+    text-align: center;
+    color: rgba(0, 0, 0, .8);
+    background-color: rgba(221, 154, 30, .8);
+    padding: 20px;
+    margin-top: 50px;
+    text-decoration: none;
+    width: 15%;
+    position: relative;
+    left: 40%;
+}
+
+#sign-up-button a {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .8);
+    color: rgba(221, 154, 30, .8);
+}
+
+/* sign up page */
+
+#form-section {
+    clear: left;
+    height: 800px;
+    background: url('../images/formbg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sign-up-form {
+    background-color: rgba(221, 154, 30, .8);
+    padding: 30px;
+    position: absolute;
+    left: 20%;
+    margin: 100px 20% 0 0;
+    max-width: 350px;
+}
+
+.sign-up-form h2 {
+    color: black;
+    padding-bottom: 10px;
+}
+
+.text-type {
+    color: black;
+    background: #fff;
+    width: 100%;
+    height: 20px;
+    border: 1px solid black;
+    margin: 10px 0;
+    display: block;
+}
+
+#birthday {
+    display: block;
+    margin: 10px 0;
+}
+
+.signup-button {
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    color: rgba(221, 154, 30, .8);
+    display: block;
+    font-weight: 300;
+    font-size: larger;
+}
+
+/* Media queries */
+
+/* For larger and medium screens */
+
+@media screen and (max-width: 1200px) {
+    #about h2 {
+        text-align: center;
+        font-size: 250%;
+        text-decoration: none;
+        padding-top: 20px;
+    }
+
+    #reviews {
+        height: fit-content;
+    }
+
+    #reviews > div {
+        width: 100%;
+        clear: both;
+        float: left;
+        padding: 0;
+        height: fit-content;
+    }
+
+    #plan-image {
+        height: fit-content;
+    }
+
+    .plan {
+        clear: both;
+        height: fit-content;
+        width: fit-content;
+    }
+
+#sign-up-button {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    left: 20%;
+}
+
+}
+
+/*For medium screens */
+
+@media screen and (max-width: 950px) {
+
+    #navigation {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+
+    #reasons {
+        width: 90%;
+        height: fit-content;
+    }
+
+    #left-reason, #right-reason, #center-reason {
+        width: 100%;
+        text-align: center;
+        clear: both;
+        float: left;
+    }
+
+    #about {
+        clear: both;
+        height: fit-content;
+    }
+
+    #link-to-plans {
+        clear: both;
+    }
+
+}
